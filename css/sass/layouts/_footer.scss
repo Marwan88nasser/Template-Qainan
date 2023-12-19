@@ -1,0 +1,87 @@
+.site-footer {
+  background-color: $footer-bg;
+  .top-footer {
+    color: $white-color;
+    .site-info {
+      width: 100%;
+      .title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      .info {
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+        display: block;
+        width: fit-content;
+        margin-right: auto;
+        font-size: 16px;
+        font-weight: 400;
+        color: $white-color;
+        i,
+        svg {
+          font-size: 14px;
+          margin-right: 5px;
+          color: $white-color;
+        }
+        transition: transform ease-out 0.3s;
+        &:hover {
+          transform: scale(1.06);
+        }
+      }
+      .lists-hold {
+        @include flex-between;
+        align-items: flex-start;
+        gap: 5px;
+        .list-links {
+          .item {
+            .link {
+              padding: 8px 16px;
+              transition: $main-transition;
+              color: $white-color;
+              display: block;
+              font-size: 16px;
+              transition: transform ease-out 0.3s;
+              &:hover {
+                transform: scale(1.06);
+              }
+            }
+          }
+        }
+      }
+    }
+    .social {
+      @include flex-justify(flex-end);
+      gap: 10px;
+      a {
+        @include circle(40px);
+        @include flex-center;
+        font-size: 20px;
+        background-color: #144f77;
+        color: $white-color;
+        transition: transform ease-out 0.3s;
+        &:hover {
+          transform: scale(1.06);
+        }
+      }
+    }
+  }
+  .bottom-footer {
+    background-color: #144f77;
+    .logo-holder {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: 7px;
+      font-weight: 400;
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 0.6rem;
+      .logo {
+        width: 35px;
+        height: auto;
+      }
+    }
+  }
+}

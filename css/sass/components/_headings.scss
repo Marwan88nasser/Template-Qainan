@@ -1,0 +1,54 @@
+.main-heading {
+  margin-bottom: 35px;
+  font-size: 40px;
+  font-weight: 700;
+  color: $main-color;
+  text-align: center;
+  &.sm-b {
+    margin-bottom: 15px;
+  }
+}
+.main-des {
+  margin-bottom: 30px;
+  font-size: 17px;
+  color: $main-color-light;
+  font-weight: 400;
+  text-align: center;
+}
+
+.shape-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 52px;
+  color: $main-color;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  .img {
+    display: block;
+    margin: 6px auto 0;
+    width: 80%;
+    max-width: 139px;
+    height: auto;
+    @include main-color-filter;
+  }
+}
+
+.small-heading {
+  text-align: center;
+  color: $white-color;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.bg-title {
+  background-color: $main-color;
+  border-right: 4px solid  $main-color-dark;
+  color: $white-color;
+  font-size: 17px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto 10px;
+  padding: 0 15px;
+}

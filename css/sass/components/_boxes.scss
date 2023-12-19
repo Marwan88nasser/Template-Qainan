@@ -1,0 +1,333 @@
+.service-box {
+  @include flex-column-center;
+  min-height: 260px;
+  padding: 10px;
+  border-radius: 23px;
+  text-align: center;
+  transition: $sm-transition;
+  background-color: $white-color;
+  .img-holder {
+    @include flex-center;
+    height: 100px;
+    margin-bottom: 10px;
+    img {
+      width: 92px;
+      height: 95px;
+    }
+  }
+  .title {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 22px;
+    text-align: center;
+    color: $main-text-color;
+  }
+  .des {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: $main-color-light;
+  }
+  &.active,
+  &:hover {
+    box-shadow: 0 0 10px 0 rgb(17 71 107 / 20%);
+    .title {
+      color: $main-color;
+    }
+  }
+}
+
+.job-box {
+  position: relative;
+  width: 100%;
+  height: 357px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: $sm-transition;
+  img {
+    @include set-cover-img;
+    transition: $sm-transition;
+  }
+  .title {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    color: $white-color;
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 12;
+  }
+  &::before {
+    content: "";
+    @include reset-position;
+    @include full-w-h;
+    background: linear-gradient(0deg, rgb(0 0 0 / 72%), transparent);
+    z-index: 11;
+  }
+  &:hover {
+    img {
+      transform: scale(1.02);
+    }
+  }
+}
+
+.box-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  .content-text {
+    .title {
+      color: $main-color;
+      font-weight: 600;
+      font-size: 23px;
+      font-weight: 400;
+    }
+    .des {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 10px;
+      color: $main-color-light;
+    }
+    @include maxWidth(sm) {
+      font-size: 15px;
+    }
+  }
+}
+
+.operation-box {
+  @include flex-column-center;
+  min-height: 260px;
+  text-align: center;
+  padding: 5px;
+  .img-holder {
+    @include flex-center;
+    @include circle(180px);
+    margin-bottom: 20px;
+    background-color: $white-color;
+    transition: $sm-transition;
+    img {
+      transition: $sm-transition;
+      width: 95px;
+      &.won-custom {
+        width: 110px;
+      }
+    }
+  }
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+    color: $main-color;
+  }
+  .des {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: $main-color-light;
+  }
+  &.active,
+  &:hover {
+    .img-holder {
+      background-color: $main-color;
+      img {
+        filter: brightness(0) saturate(100%) invert(98%) sepia(0%) saturate(0%)
+          hue-rotate(308deg) brightness(101%) contrast(103%);
+      }
+    }
+  }
+}
+
+.country-box {
+  @include flex-column-center;
+  min-height: 240px;
+  padding: 5px;
+  border-radius: 23px;
+  text-align: center;
+  transition: $sm-transition;
+  background-color: $white-color;
+  border: 2px solid #f5f8f9;
+  .img-holder {
+    @include flex-center;
+    min-height: 100px;
+    margin-bottom: 15px;
+    img {
+      width: 140px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  .title {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    text-align: center;
+    color: $main-color;
+  }
+  &:hover {
+    box-shadow: 0 0 10px 0 rgb(17 71 107 / 10%);
+  }
+}
+
+.partner-box {
+  @include flex-column-center;
+  min-height: 200px;
+  padding: 5px;
+  text-align: center;
+  background-color: $white-color;
+  img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    &.won-custom {
+      width: 200px;
+    }
+  }
+}
+
+
+// blocks article
+.box-article {
+  .date-holder {
+    z-index: 100;
+    @include reset-position;
+    @include flex-center;
+    gap: 5px;
+    background-color: $main-color;
+    padding: 9px 20px;
+    border-radius: 0px 10px 0px 10px;
+    color: $white-color;
+    font-size: 16px;
+    i,
+    svg {
+      color: $white-color;
+    }
+    p {
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+  }
+  &.show-article {
+    transition: $sm-transition;
+    position: relative;
+    border: 1px solid #cfd6d7;
+    border-radius: 10px;
+    padding: 15px;
+    .date-holder {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 7px 20px;
+      width: fit-content;
+    }
+    .img-holder {
+      margin-bottom: 10px;
+      border-radius: 10px;
+      .img-article {
+        border-radius: 10px;
+        transition: transform, $sm-transition;
+        width: 100%;
+        object-fit: cover;
+        height: 260px;
+      }
+    }
+    .text-holder {
+      .article-title {
+        display: block;
+        transition: $sm-transition;
+        color: #3f5c74;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+      .article-des {
+        font-weight: 600;
+        color: #757575;
+        font-size: 15px;
+        margin-bottom: 0%;
+      }
+    }
+    .category {
+      display: block;
+      width: 100%;
+      color: #757575;
+      font-size: 11px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    .share-holder {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      .circle {
+        cursor: pointer;
+        transition: $sm-transition;
+        @include circle(35px);
+        @include flex-center;
+        background-color: $main-color;
+        &:hover {
+          transform: translateY(-5px);
+        }
+        a {
+          @include flex-center;
+          color: $white-color;
+          i,
+          svg {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+.blocks-news {
+  border: 1px solid #cfd6d7;
+  padding: 10px;
+  border-radius: 10px;
+  .box-side-News {
+    background-color: $main-color;
+    padding: 10px;
+    transition: $sm-transition;
+    &:hover {
+      background-color: $main-color-dark;
+    }
+    .img {
+      width: 60px;
+      height: 60px;
+      border-radius: 4px;
+      object-fit: cover;
+    }
+    .title {
+      color: $white-color;
+      display: block;
+      font-size: 14px;
+      margin-bottom: 0px;
+      font-weight: bold;
+    }
+    .category {
+      font-size: 11px;
+      color: $main-color-dark;
+      margin-bottom: 5px;
+    }
+    .content {
+      color: $white-color;
+      margin: 0;
+      font-size: 13px;
+      max-width: 165px;
+      overflow: hidden;
+      @media (min-width: 768px) and (max-width: 1200px) {
+        max-width: 117px;
+      }
+    }
+  }
+  
+}
