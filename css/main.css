@@ -975,32 +975,25 @@ textarea:focus::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 16px;
 }
 .site-header .top-nav .nav-content .nav-list .item .link {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   gap: 8px;
   font-size: 14px;
   font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
   color: #fff;
+  text-align: right;
   transition: transform ease-out 0.3s;
   background-color: transparent;
 }
-.site-header .top-nav .nav-content .nav-list .item .link.md-link {
-  font-size: 15px;
-  letter-spacing: 2px;
-}
-.site-header .top-nav .nav-content .nav-list .item .link.md-link .icon {
-  font-size: 15px;
-}
-.site-header .top-nav .nav-content .nav-list .item .link.lg-link {
-  font-size: 16px;
-}
 .site-header .top-nav .nav-content .nav-list .item .link .icon {
-  color: #fff;
-  font-size: 14px;
+  width: 20px;
+  height: auto;
 }
 .site-header .top-nav .nav-content .nav-list .item .link:hover {
   transform: scale(1.04);
