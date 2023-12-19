@@ -1,91 +1,24 @@
 .swiper-landing {
-  position: relative;
-  height: calc(100vh - 50px - 74.03px);
-
+  width: 100%;
+  height: 100%;
   .swiper-wrapper {
     .swiper-slide {
-      position: relative;
-      &::before {
-        content: "";
-        @include reset-position;
-        @include full-w-h;
-        z-index: 1;
-        background-color: rgb(3 33 53 / 22%);
-      }
       img {
         @include set-cover-img;
       }
-      .intro-text {
-        @include center-position;
-        z-index: 1;
-        @include flex-column-center;
-        color: $white-color;
-        @include maxWidth(md) {
-          white-space: nowrap;
-        }
-        .title {
-          margin-bottom: 10px;
-          font-size: 28px;
-          font-weight: 400;
-          @include maxWidth(xs) {
-            font-size: 25px;
-          }
-        }
-        .des {
-          font-weight: 400;
-          font-size: 38px;
-          margin-bottom: 0;
-          @include maxWidth(xs) {
-            font-size: 28px;
-          }
-        }
-      }
     }
   }
-  .btn-directions {
-    width: 40px;
-    height: 35px;
-    &::after {
-      font-size: 38px;
-      color: $white-color;
-    }
-    &.right {
-      right: 80px !important;
-    }
-    &.left {
-      left: 80px !important;
-    }
-    @include maxWidth(md) {
-      &.right {
-        right: 20px !important;
-      }
-      &.left {
-        left: 20px !important;
-      }
-    }
-    @include maxWidth(sm) {
-      &.right {
-        right: 5px !important;
-      }
-      &.left {
-        left: 5px !important;
-      }
-    }
-    @include maxWidth(xs) {
-      display: none;
-    }
-  }
+
   .swiper-pagination {
-    bottom: 50px;
+    bottom: 5%;
+    left: 44%;
     .swiper-pagination-bullet {
-      width: 9px;
-      height: 9px;
-      background-color: $white-color;
+      width: 24px;
+      height: 24px;
       opacity: 1;
       transition: $sm-transition;
+      background-color: $white-color;
       &.swiper-pagination-bullet-active {
-        width: 10px;
-        height: 10px;
         background-color: $main-color;
       }
     }
@@ -99,9 +32,11 @@
 .country-swiper {
   height: fit-content;
   padding: 20px;
+
   @include maxWidth(sm) {
     padding: 10px;
   }
+
   .swiper-wrapper {
     .swiper-slide {
       &.swiper-slide-active {
