@@ -18,7 +18,7 @@
       flex-wrap: wrap;
       gap: 8px;
       @include maxWidth(sm) {
-        justify-content: center
+        justify-content: center;
       }
       .holder-nav-list {
         @include flex-between;
@@ -26,29 +26,22 @@
       }
       .nav-list {
         @include flex-center;
-        gap: 15px;
+        gap: 16px;
         .item {
           .link {
-            @include flex-justify(flex-start);
+            @include flex-justify(flex-end);
             gap: 8px;
             font-size: 14px;
             font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
             color: $white-color;
+            text-align: right;
             transition: transform ease-out 0.3s;
             background-color: transparent;
-            &.md-link {
-              font-size: 15px;
-              letter-spacing: 2px;
-              .icon {
-                font-size: 15px;
-              }
-            }
-            &.lg-link {
-              font-size: 16px;
-            }
             .icon {
-              color: $white-color;
-              font-size: 14px;
+              width: 20px;
+              height: auto;
             }
             &:hover {
               transform: scale(1.04);
