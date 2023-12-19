@@ -35,12 +35,10 @@
 }
 
 .h-fit {
-  height: -moz-fit-content;
   height: fit-content;
 }
 
 .w-fit {
-  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -106,7 +104,6 @@
   font-size: 28px;
   line-height: 52px;
   color: #F46523;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -219,8 +216,7 @@
 .job-box img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.3s;
 }
 .job-box .title {
@@ -345,8 +341,7 @@
 .country-box .img-holder img {
   width: 140px;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .country-box .title {
   font-size: 21px;
@@ -372,8 +367,7 @@
 .partner-box img {
   width: 100px;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .partner-box img.won-custom {
   width: 200px;
@@ -414,7 +408,6 @@
   top: 0;
   right: 0;
   padding: 7px 20px;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .box-article.show-article .img-holder {
@@ -425,8 +418,7 @@
   border-radius: 10px;
   transition: transform, 0.3s;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 260px;
 }
 .box-article.show-article .text-holder .article-title {
@@ -498,8 +490,7 @@
   width: 60px;
   height: 60px;
   border-radius: 4px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .blocks-news .box-side-News .title {
   color: #fff;
@@ -566,8 +557,7 @@
 .swiper-landing .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .swiper-landing .swiper-pagination {
   bottom: 5%;
@@ -585,12 +575,10 @@
 }
 
 .partners-swiper {
-  height: -moz-fit-content;
   height: fit-content;
 }
 
 .country-swiper {
-  height: -moz-fit-content;
   height: fit-content;
   padding: 20px;
 }
@@ -648,11 +636,6 @@ textarea:focus {
 input,
 textarea {
   direction: rtl !important;
-}
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-  opacity: 0;
-  -moz-transition: 0.3s;
-  transition: 0.3s;
 }
 input:focus::placeholder,
 textarea:focus::placeholder {
@@ -723,8 +706,7 @@ textarea:focus::placeholder {
 .about .about-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .services {
@@ -818,11 +800,6 @@ textarea:focus::placeholder {
   border: 1px solid #b4bec8;
   font-size: 14px;
   font-weight: 400;
-}
-.contact .form .boxes .box .inp-holder .inp::-moz-placeholder, .contact .form .boxes .box .inp-holder textarea::-moz-placeholder {
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(135, 135, 135, 0.5);
 }
 .contact .form .boxes .box .inp-holder .inp::placeholder,
 .contact .form .boxes .box .inp-holder textarea::placeholder {
@@ -1103,7 +1080,7 @@ textarea:focus::placeholder {
 .footer .footer-top .items {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 10px;
 }
 .footer .footer-top .items .item {
   white-space: nowrap;
@@ -1114,39 +1091,8 @@ textarea:focus::placeholder {
   line-height: 21px;
   text-align: justified;
   display: flex;
-<<<<<<< HEAD
-  align-items: stretch;
-}
-.footer .footer-top .box-social .parent-inp .inp {
-  border: 0;
-  padding: 9px 20px;
-  border-radius: 0 10px 10px 0;
-  flex: 1;
-  font-weight: 400;
-  font-size: 16px;
-  color: #b8b8b8;
-}
-.footer .footer-top .box-social .parent-inp .inp::-moz-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  color: #b8b8b8;
-}
-.footer .footer-top .box-social .parent-inp .inp::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  color: #b8b8b8;
-}
-.footer .footer-top .box-social .parent-inp .btn-sub {
-  font-weight: 400;
-  font-size: 16px;
-  padding: 10px 17px;
-  background: rgb(176, 121, 93);
-  border-radius: 10px 0px 0px 10px;
-  color: white;
-=======
   align-items: center;
   gap: 5px;
->>>>>>> 83210038b1dea2fd1cac7627d898d04b114786c9
 }
 .footer .footer-top .box-social .social {
   display: flex;
@@ -1179,4 +1125,4 @@ textarea:focus::placeholder {
   font-weight: 400;
   line-height: normal;
   padding: 10px 0 11px;
-}/*# sourceMappingURL=main.css.map */
+}
