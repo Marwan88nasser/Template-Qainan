@@ -89,17 +89,6 @@ textarea {
     font-size: 17px;
   }
 }
-
-// Start about
-.about {
-  .about-img {
-    @include full-w-h;
-    img {
-      @include set-cover-img;
-    }
-  }
-}
-// End about
 // Start services
 .services {
   background-color: $bg-section-main;

@@ -3,7 +3,7 @@ new Swiper(".swiper-landing", {
   centeredSlides: true,
   loop: true,
   spaceBetween: 10,
-  speed: 1000,
+  speed: 1400,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,

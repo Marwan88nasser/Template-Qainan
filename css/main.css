@@ -699,16 +699,6 @@ textarea:focus::placeholder {
   font-size: 17px;
 }
 
-.about .about-img {
-  width: 100%;
-  height: 100%;
-}
-.about .about-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .services {
   background-color: #fbfcfd;
 }
