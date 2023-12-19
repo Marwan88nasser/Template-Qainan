@@ -5,13 +5,14 @@
   width: 100%;
   background-color: rgba(47, 47, 47, 0.8);
   .top-nav {
-    width: 100%;
     min-height: 40px;
+    width: 100%;
     @include flex-center;
     @include maxWidth(sm) {
       padding: 7px 0px;
     }
     .nav-content {
+      width: 100%;
       @include flex-between;
       flex-wrap: wrap;
       gap: 8px;
