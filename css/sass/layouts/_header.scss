@@ -8,6 +8,7 @@
     min-height: 40px;
     width: 100%;
     @include flex-center;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
     @include maxWidth(sm) {
       padding: 7px 0px;
     }
@@ -73,7 +74,6 @@
   }
   ///
   .bottom-nav {
-    background-color: $white-color;
     filter: drop-shadow(0px 1px 4.5px rgba(18, 72, 107, 0.13));
     h1 {
       .navbar-brand {
