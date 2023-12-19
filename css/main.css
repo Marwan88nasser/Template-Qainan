@@ -1093,7 +1093,7 @@ textarea:focus::placeholder {
 .footer .footer-top .items {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 10px;
 }
 .footer .footer-top .items .item {
   white-space: nowrap;

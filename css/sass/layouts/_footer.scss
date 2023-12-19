@@ -20,7 +20,7 @@
     .items {
       display: flex;
       flex-direction: column;
-      gap: 7px;
+      gap: 10px;
       .item {
         white-space: nowrap;
         color: white;
@@ -48,7 +48,7 @@
           width: 20px;
           height: 20px;
           transition: 0.3s all ease-in;
-          &:hover{
+          &:hover {
             background-color: $main-color;
             color: #fff;
           }
