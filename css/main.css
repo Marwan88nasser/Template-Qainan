@@ -147,6 +147,7 @@
   position: relative;
   margin-bottom: 10px;
   color: #2F2F2F;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .main-title.white {
@@ -716,17 +717,6 @@ textarea:focus::placeholder {
   font-size: 17px;
 }
 
-.about .about-img {
-  width: 100%;
-  height: 100%;
-}
-.about .about-img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .services {
   background-color: #fbfcfd;
 }
@@ -1114,39 +1104,8 @@ textarea:focus::placeholder {
   line-height: 21px;
   text-align: justified;
   display: flex;
-<<<<<<< HEAD
-  align-items: stretch;
-}
-.footer .footer-top .box-social .parent-inp .inp {
-  border: 0;
-  padding: 9px 20px;
-  border-radius: 0 10px 10px 0;
-  flex: 1;
-  font-weight: 400;
-  font-size: 16px;
-  color: #b8b8b8;
-}
-.footer .footer-top .box-social .parent-inp .inp::-moz-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  color: #b8b8b8;
-}
-.footer .footer-top .box-social .parent-inp .inp::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  color: #b8b8b8;
-}
-.footer .footer-top .box-social .parent-inp .btn-sub {
-  font-weight: 400;
-  font-size: 16px;
-  padding: 10px 17px;
-  background: rgb(176, 121, 93);
-  border-radius: 10px 0px 0px 10px;
-  color: white;
-=======
   align-items: center;
   gap: 5px;
->>>>>>> 83210038b1dea2fd1cac7627d898d04b114786c9
 }
 .footer .footer-top .box-social .social {
   display: flex;
