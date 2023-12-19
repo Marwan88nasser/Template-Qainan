@@ -323,43 +323,6 @@
   filter: brightness(0) saturate(100%) invert(98%) sepia(0%) saturate(0%) hue-rotate(308deg) brightness(101%) contrast(103%);
 }
 
-.country-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 240px;
-  padding: 5px;
-  border-radius: 23px;
-  text-align: center;
-  transition: 0.3s;
-  background-color: #fff;
-  border: 2px solid #f5f8f9;
-}
-.country-box .img-holder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100px;
-  margin-bottom: 15px;
-}
-.country-box .img-holder img {
-  width: 140px;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.country-box .title {
-  font-size: 21px;
-  font-weight: 700;
-  margin-bottom: 0px;
-  text-align: center;
-  color: #F46523;
-}
-.country-box:hover {
-  box-shadow: 0 0 10px 0 rgba(17, 71, 107, 0.1);
-}
-
 .partner-box {
   display: flex;
   flex-direction: column;
@@ -529,20 +492,15 @@
 
 .box-intro {
   position: absolute;
-  left: 25%;
+  left: 0%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
   width: 500px;
+  z-index: 1;
   color: #2F2F2F;
+  transform: translateY(-50%);
 }
 .box-intro span {
   color: #fff;
-}
-@media (max-width: 575.98px) {
-  .box-intro {
-    width: 100%;
-  }
 }
 .box-intro .title {
   font-size: 36px;
@@ -560,19 +518,61 @@
   letter-spacing: 0px;
   text-align: justified;
 }
+@media (max-width: 575.98px) {
+  .box-intro {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+  .box-intro .title {
+    font-size: 34px;
+  }
+  .box-intro .des {
+    font-size: 22px;
+    line-height: 45px;
+  }
+}
+
+.box-other-image {
+  width: 100%;
+  height: 303px;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.box-other-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
 .swiper-landing {
   width: 100%;
   height: 100%;
 }
+.swiper-landing .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+.swiper-landing .swiper-wrapper .swiper-slide .container {
+  position: relative;
+  height: 100%;
+}
 .swiper-landing .swiper-wrapper .swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .swiper-landing .swiper-pagination {
-  bottom: 5%;
-  left: 44%;
+  bottom: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 2%;
 }
 .swiper-landing .swiper-pagination .swiper-pagination-bullet {
   width: 24px;
@@ -1058,7 +1058,7 @@ textarea:focus::placeholder {
   background-color: transparent;
 }
 .site-header .bottom-nav .btn-holder .search-nav img {
-  width: 24px;
+  width: 21px;
   height: auto;
 }
 
