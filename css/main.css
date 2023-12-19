@@ -143,10 +143,11 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
-  padding: 10px;
+  padding: 10px 0;
   position: relative;
   margin-bottom: 10px;
   color: #2F2F2F;
+  width: fit-content;
 }
 .main-title.white {
   color: #fff;
@@ -1085,6 +1086,10 @@ textarea:focus::placeholder {
 .footer .footer-top {
   padding: 40px 0 20px;
 }
+.footer .footer-top .info {
+  display: flex;
+  align-items: center;
+}
 .footer .footer-top .info .logo {
   margin-bottom: 26px;
   width: 187px;
@@ -1095,22 +1100,10 @@ textarea:focus::placeholder {
     width: 100px;
   }
 }
-.footer .footer-top .info .text {
-  font-size: 12px;
-  font-weight: 500;
-  max-width: 356px;
-  line-height: 26px;
-}
 .footer .footer-top .items {
   display: flex;
   flex-direction: column;
   gap: 7px;
-}
-.footer .footer-top .items .title {
-  margin-bottom: 1px;
-  font-size: 18px;
-  line-height: normal;
-  font-weight: 600;
 }
 .footer .footer-top .items .item {
   white-space: nowrap;
@@ -1118,19 +1111,10 @@ textarea:focus::placeholder {
   line-height: normal;
   font-size: 14px;
   font-weight: 400;
-}
-.footer .footer-top .box-social .text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  max-width: 306px;
-  margin-bottom: 21px;
-}
-.footer .footer-top .box-social .parent-inp {
-  width: 306px;
-  margin-bottom: 35px;
-  max-width: 100%;
+  line-height: 21px;
+  text-align: justified;
   display: flex;
+<<<<<<< HEAD
   align-items: stretch;
 }
 .footer .footer-top .box-social .parent-inp .inp {
@@ -1159,16 +1143,30 @@ textarea:focus::placeholder {
   background: rgb(176, 121, 93);
   border-radius: 10px 0px 0px 10px;
   color: white;
+=======
+  align-items: center;
+  gap: 5px;
+>>>>>>> 83210038b1dea2fd1cac7627d898d04b114786c9
 }
 .footer .footer-top .box-social .social {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 12px;
 }
 .footer .footer-top .box-social .social i,
 .footer .footer-top .box-social .social svg {
-  font-size: 27px;
   color: white;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 9px;
+  width: 20px;
+  height: 20px;
+  transition: 0.3s all ease-in;
+}
+.footer .footer-top .box-social .social i:hover,
+.footer .footer-top .box-social .social svg:hover {
+  background-color: #F46523;
+  color: #fff;
 }
 .footer .bar {
   height: 0.5px;

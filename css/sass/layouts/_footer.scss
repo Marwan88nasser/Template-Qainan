@@ -6,6 +6,8 @@
   .footer-top {
     padding: 40px 0 20px;
     .info {
+      display: flex;
+      align-items: center;
       .logo {
         margin-bottom: 26px;
         width: 187px;
@@ -14,76 +16,42 @@
           width: 100px;
         }
       }
-      .text {
-        font-size: 12px;
-        font-weight: 500;
-        max-width: 356px;
-        line-height: 26px;
-      }
     }
     .items {
       display: flex;
       flex-direction: column;
       gap: 7px;
-      .title {
-        margin-bottom: 1px;
-        font-size: 18px;
-        line-height: normal;
-        font-weight: 600;
-      }
       .item {
         white-space: nowrap;
         color: white;
         line-height: normal;
         font-size: 14px;
         font-weight: 400;
+        line-height: 21px;
+        text-align: justified;
+        display: flex;
+        align-items: center;
+        gap: 5px;
       }
     }
     .box-social {
-      .text {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 30px;
-        max-width: 306px;
-        margin-bottom: 21px;
-      }
-      .parent-inp {
-        width: 306px;
-        margin-bottom: 35px;
-        max-width: 100%;
-        display: flex;
-        align-items: stretch;
-        .inp {
-          border: 0;
-          padding: 9px 20px;
-          border-radius: 0 10px 10px 0;
-          flex: 1;
-          font-weight: 400;
-          font-size: 16px;
-          color: #b8b8b8;
-          &::placeholder {
-            font-weight: 400;
-            font-size: 16px;
-            color: #b8b8b8;
-          }
-        }
-        .btn-sub {
-          font-weight: 400;
-          font-size: 16px;
-          padding: 10px 17px;
-          background: rgba(176, 121, 93, 1);
-          border-radius: 10px 0px 0px 10px;
-          color: white;
-        }
-      }
       .social {
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 12px;
         i,
         svg {
-          font-size: 27px;
           color: white;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          padding: 9px;
+          width: 20px;
+          height: 20px;
+          transition: 0.3s all ease-in;
+          &:hover{
+            background-color: $main-color;
+            color: #fff;
+          }
         }
       }
     }
@@ -101,4 +69,3 @@
     padding: 10px 0 11px;
   }
 }
-
