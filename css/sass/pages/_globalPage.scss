@@ -32,7 +32,7 @@ textarea:focus {
 // custom Input
 input,
 textarea {
-  direction: rtl !important;
+  // direction: rtl !important;
   &:focus::placeholder {
     opacity: 0;
     transition: $sm-transition;
