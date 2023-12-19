@@ -1,23 +1,40 @@
-.btn-join {
-  @include flex-center;
+.btn-sub {
+  padding: 16px;
+  border-radius: 8px !important;
   gap: 10px;
   background-color: $main-color;
   color: $white-color;
   border-radius: 2px;
-  padding: 8px 25px;
+  padding: 10px 64px;
   transition: $main-transition;
-  &:hover {
-    transform: scale(1.02);
-  }
-}
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
 
-.btn-sub {
-  background-color: $main-color;
-  color: $white-color;
-  border-radius: 40px;
-  padding: 6px 35px;
-  transition: $main-transition;
   &:hover {
-    transform: scale(1.02);
+    background-color: #fff;
+    border: 1px solid $main-color;
+    color: $main-color;
   }
+  
+}
+.btn-white {
+  padding: 16px;
+  border-radius: 8px !important;
+  gap: 10px;
+  border:  1px solid $main-color;
+  background-color: #fff;
+  color: $main-color;
+  border-radius: 2px;
+  padding: 10px 64px;
+  transition: $main-transition;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+
+  &:hover {
+    background-color: $main-color;
+    color: #fff;
+  }
+  
 }

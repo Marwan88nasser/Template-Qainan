@@ -100,14 +100,7 @@ textarea {
 }
 // End operation
 
-// Start jobs
-.jobs {
-  background: url("../images/jobs-bg.png") no-repeat left 15%;
-  @include maxWidth(sm) {
-    background-position: left 4%;
-  }
-}
-// End jobs
+
 
 .contact {
   padding: 70px 0px;

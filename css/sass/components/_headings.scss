@@ -1,9 +1,13 @@
 .main-heading {
   margin-bottom: 35px;
-  font-size: 40px;
-  font-weight: 700;
-  color: $main-color;
+  color: #2f2f2f;
   text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  span {
+    color: $main-color;
+  }
   &.sm-b {
     margin-bottom: 15px;
   }
@@ -12,8 +16,11 @@
   margin-bottom: 30px;
   font-size: 17px;
   color: $main-color-light;
-  font-weight: 400;
   text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+  width: 620px;
 }
 
 .shape-title {
@@ -44,7 +51,7 @@
 
 .bg-title {
   background-color: $main-color;
-  border-right: 4px solid  $main-color-dark;
+  border-right: 4px solid $main-color-dark;
   color: $white-color;
   font-size: 17px;
   height: 50px;
@@ -59,14 +66,14 @@
   padding: 10px 0;
   position: relative;
   margin-bottom: 10px;
-  color: #2F2F2F;
+  color: #2f2f2f;
   width: fit-content;
-  &.white{
+  &.white {
     color: #fff;
   }
-  &::before{
+  &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 50%;
     height: 2px;
     background-color: $main-color;
