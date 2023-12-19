@@ -1097,6 +1097,10 @@ textarea:focus::placeholder {
 .footer .footer-top {
   padding: 40px 0 20px;
 }
+.footer .footer-top .info {
+  display: flex;
+  align-items: center;
+}
 .footer .footer-top .info .logo {
   margin-bottom: 26px;
   width: 187px;
@@ -1106,12 +1110,6 @@ textarea:focus::placeholder {
   .footer .footer-top .info .logo {
     width: 100px;
   }
-}
-.footer .footer-top .info .text {
-  font-size: 12px;
-  font-weight: 500;
-  max-width: 356px;
-  line-height: 26px;
 }
 .footer .footer-top .items {
   display: flex;

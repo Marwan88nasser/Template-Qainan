@@ -6,6 +6,8 @@
   .footer-top {
     padding: 40px 0 20px;
     .info {
+      display: flex;
+      align-items: center;
       .logo {
         margin-bottom: 26px;
         width: 187px;
@@ -13,12 +15,6 @@
         @include maxWidth(sm) {
           width: 100px;
         }
-      }
-      .text {
-        font-size: 12px;
-        font-weight: 500;
-        max-width: 356px;
-        line-height: 26px;
       }
     }
     .items {
