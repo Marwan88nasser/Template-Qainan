@@ -1,12 +1,15 @@
 .swiper-landing {
   @include full-w-h;
+
   .swiper-wrapper {
     .swiper-slide {
       position: relative;
+
       .container {
         position: relative;
         height: 100%;
       }
+
       img {
         position: absolute;
         top: 0;
@@ -20,12 +23,14 @@
     bottom: 3%;
     @include flex-justify(flex-end);
     padding: 0 2%;
+
     .swiper-pagination-bullet {
       width: 24px;
       height: 24px;
       opacity: 1;
       transition: $sm-transition;
       background-color: $white-color;
+
       &.swiper-pagination-bullet-active {
         background-color: $main-color;
       }
@@ -33,25 +38,49 @@
   }
 }
 
-.partners-swiper {
+.swiper-works {
   height: fit-content;
-}
+  padding: 15px 15px 70px;
 
-.country-swiper {
-  height: fit-content;
-  padding: 20px;
-
-  @include maxWidth(sm) {
-    padding: 10px;
-  }
-
-  .swiper-wrapper {
-    .swiper-slide {
-      &.swiper-slide-active {
-        .country-box {
-          box-shadow: 0 0 10px 0 rgb(17 71 107 / 20%);
+  .holder-control {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 280px;
+    max-width: 100%;
+    transform: translateX(-50%);
+    @include flex-justify(center);
+    .swiper-pagination {
+      z-index: unset;
+      .swiper-pagination-bullet {
+        width: 32px;
+        height: 4px;
+        border-radius: 6px;
+        opacity: 1;
+        transition: $sm-transition;
+        background-color: rgba(47, 47, 47, 0.3);
+        &.swiper-pagination-bullet-active {
+          background-color: $main-color;
         }
       }
     }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      height: fit-content;
+      &::after {
+        font-size: 19px;
+        font-weight: 700;
+        color: $main-color;
+      }
+    }
+    .swiper-button-next {
+      right: 0%;
+    }
+    .swiper-button-prev {
+      left: 0%;
+      
+    }
   }
+
 }
