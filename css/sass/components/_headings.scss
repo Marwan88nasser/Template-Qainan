@@ -5,26 +5,32 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 42px;
+
     span {
         color: $main-color;
     }
+
     &.sm-b {
         margin-bottom: 15px;
     }
 }
+
 .main-des {
     margin-bottom: 30px;
+    font-size: 17px;
     color: $main-color-light;
     text-align: center;
     font-size: 13px;
     font-weight: 400;
     line-height: 26px;
     width: 620px;
+
     &.lg {
         color: #2f2f2f;
         font-size: 20px;
         font-weight: 500;
     }
+
     @include maxWidth(sm) {
         width: 100%;
     }
@@ -39,6 +45,7 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 20px;
+
     .img {
         display: block;
         margin: 6px auto 0;
@@ -66,6 +73,7 @@
     margin: 0 auto 10px;
     padding: 0 15px;
 }
+
 .main-title {
     font-size: 24px;
     font-weight: 500;
@@ -75,9 +83,11 @@
     margin-bottom: 10px;
     color: #2f2f2f;
     width: fit-content;
+
     &.white {
         color: #fff;
     }
+
     &::before {
         position: absolute;
         content: "";

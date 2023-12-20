@@ -63,4 +63,25 @@
       background-color: $main-color;
     }
   }
+  
+}
+.btn-white {
+  padding: 16px;
+  border-radius: 8px !important;
+  gap: 10px;
+  border:  1px solid $main-color;
+  background-color: #fff;
+  color: $main-color;
+  border-radius: 2px;
+  padding: 10px 64px;
+  transition: $main-transition;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+
+  &:hover {
+    background-color: $main-color;
+    color: #fff;
+  }
+  
 }

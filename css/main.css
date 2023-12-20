@@ -119,6 +119,25 @@
   background-color: #F46523;
 }
 
+.btn-white {
+  padding: 16px;
+  border-radius: 8px !important;
+  gap: 10px;
+  border: 1px solid #F46523;
+  background-color: #fff;
+  color: #F46523;
+  border-radius: 2px;
+  padding: 10px 64px;
+  transition: 0.4s;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+}
+.btn-white:hover {
+  background-color: #F46523;
+  color: #fff;
+}
+
 .main-heading {
   margin-bottom: 35px;
   color: #2f2f2f;
@@ -136,6 +155,7 @@
 
 .main-des {
   margin-bottom: 30px;
+  font-size: 17px;
   color: #74818a;
   text-align: center;
   font-size: 13px;
